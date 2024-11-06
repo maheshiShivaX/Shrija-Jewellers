@@ -1,0 +1,170 @@
+.header {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ffffff42;
+}
+
+.header-links {
+    gap: 40px;
+}
+
+.login-register-links {
+    gap: 5px;
+}
+
+.login-register-links a {
+    text-decoration: none;
+}
+
+.login-register-links span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.83px;
+    color: #ffffff;
+}
+
+.cart-link {
+    gap: 10px;
+}
+
+.search-menu-links {
+    gap: 30px;
+}
+
+.burger-menu {
+    display: none;
+}
+
+.login-register-links a span:hover {
+    color: #e4bb52;
+}
+
+.container-header {
+    /* opacity: 0; */
+    /* transform: translateY(-100%); */
+    /* transition: opacity 1s ease-out, transform 1.6s ease-out; */
+    background-color: #000;
+  }
+  
+  /* .container-header.show {
+    opacity: 1;
+    transform: translateY(0);
+  } */
+
+
+@media only screen and (max-width:572px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .container-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+    }
+
+    .header-logo {
+        height: 30px;
+    }
+
+    .header-links {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: #000;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .container-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        display: flex;
+    }
+
+    .header-logo {
+        height: 30px;
+    }
+
+    .header-links {
+        position: absolute;
+        right: 0px;
+        top: 50px;
+        background: #000;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .burger-menu {
+        display: block;
+    }
+
+    .container-header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: flex;
+    }
+
+    .header-logo {
+        height: 42px;
+    }
+
+    .header-links {
+        position: absolute;
+        right: 0px;
+        top: 70px;
+        background: #000;
+        width: 100%;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    .menu {
+        margin-top: 15px;
+    }
+
+    .menu-icon {
+        display: none;
+    }
+}

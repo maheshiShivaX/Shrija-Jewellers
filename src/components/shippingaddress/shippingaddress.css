@@ -1,0 +1,116 @@
+.bg_pic ::placeholder {
+    color: #fff !important;
+}
+
+.bg_pic {
+    background-color: #000;
+}
+
+.hedding_product h2 {
+    text-align: center;
+    font-size: 45px;
+    margin: 0;
+    color: #fff;
+}
+
+.from_wepper {
+    max-width: 900px;
+    border: solid 3px #caa746;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.from_wepper .form-control {
+    background-color: transparent !important;
+    border-radius: 50px;
+    padding: 10px 15px;
+    color: #fff !important;
+}
+
+.from_wepper p {
+    background-color: #8080808a;
+    padding: 10px;
+    font-size: 15px;
+    color: #fff;
+    border-radius: 8px;
+}
+
+.from_wepper span {
+    color: #fff;
+    margin-bottom: 25px;
+    display: block;
+}
+
+
+.from_wepper .form-group {
+    margin-bottom: 20px;
+}
+
+.from_wepper .form-group select {
+    background: #000000;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 13px;
+    width: 100%;
+    border: 1px solid white;
+}
+
+.address_bottom_border {
+    height: 1px;
+    background: #caa74657;
+    margin: 20px 0px;
+}
+
+.userName {
+    font-size: 20px;
+    margin-bottom: 6px !important;
+}
+
+.select_address_button {
+    height: 18px;
+    width: 18px;
+}
+
+.button_con {
+    border: solid 1px white;
+    width: 40%;
+    margin: auto;
+    padding: 10px 45px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: solid 1px #caa746;
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.form-control:focus {
+    border-color: #caa746;
+    box-shadow: unset;
+}
+
+.address_checkout_card {
+    border: solid 3px #caa746;
+    max-height: 200px;
+    border-radius: 10px;
+    padding: 25px 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media(max-width:570px) {
+    .bg_pic {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .hedding_product {
+        padding-top: 28px;
+    }
+
+    .button_con {
+        border: solid 1px white;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}

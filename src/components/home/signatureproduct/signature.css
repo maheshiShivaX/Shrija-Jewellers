@@ -1,0 +1,317 @@
+.signature-screen {
+    background-color: #000000;
+}
+
+.signature {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.signature-product h2 {
+    font-size: 70px;
+    line-height: 77px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.signature-product span,
+.featured-product h4,
+.featured-product .featured-content p {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.featured-product .featured-content {
+    gap: 40px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+    border-bottom: 1px solid #ffffff30;
+    cursor: pointer;
+}
+
+.featured-product .featured-content h6,
+.featured-product .featured-content span {
+    font-size: 26px;
+    line-height: 28.6px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.signature-product {
+    margin-bottom: -85px;
+    position: relative;
+    z-index: 99999;
+}
+
+.featured-product {
+    display: flex;
+    justify-content: end;
+    margin-top: -285px;
+    position: relative;
+}
+
+.featured.active .featured-content h6 {
+    color: #FFD057;
+}
+
+.featured.active .featured-content p,
+.featured.active .featured-content span {
+    color: #FFD057;
+}
+
+.signature-images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.featured-content {
+    display: flex;
+}
+
+.defaultsignature-image {
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    width: 100%;
+    transition: opacity 4s ease, transform 1.4s ease, visibility 0s ease 4s;
+}
+
+
+.signature-image {
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.7;
+    display: none;
+    width: 100%;
+}
+
+.signature-image.active {
+    margin: 10px;
+    transform: scale(1);
+    transition: opacity 3s ease-in-out;
+    width: 100%;
+    display: block;
+}
+
+.active {
+    opacity: 1;
+}
+
+/* amimation css */
+.signatureproduct-section {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fadeInScreen {
+    opacity: 1;
+}
+
+.signature-product {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 3s ease-out;
+}
+
+.signature-product.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media (min-width:1201px) and (max-width:1700px) {
+    .signature {
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+
+    .defaultsignature-image img,
+    .signature-img {
+        width: 85%;
+    }
+
+    .signature-product h2 {
+        font-size: 52px;
+        line-height: 57px;
+    }
+
+    .signature-product {
+        margin-bottom: -70px;
+    }
+
+    .signature {
+        padding-top: 20px;
+        padding-bottom: 120px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+
+
+    .featured-product h4,
+    .featured-product .featured-content p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .signature-product h2 {
+        font-size: 45px;
+        line-height: 45.8px;
+    }
+
+    .signature-product {
+        margin-bottom: -48px;
+    }
+
+    .signature-image {
+        margin: 0px;
+    }
+
+    .defaultsignature-image img,
+    .signature-image img {
+        width: 85%;
+        height: 100%;
+    }
+
+    .featured-product .featured-content h6,
+    .featured-product .featured-content span {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .featured-product .featured-content {
+        gap: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ffffff30;
+        cursor: pointer;
+    }
+
+    .featured-product {
+        display: flex;
+        justify-content: end;
+        margin-top: -180px;
+        position: relative;
+    }
+
+    .signature {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+
+
+    .featured-product h4,
+    .featured-product .featured-content p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .signature-product h2 {
+        font-size: 45px;
+        line-height: 45.8px;
+    }
+
+    .signature-product {
+        margin-bottom: 30px;
+    }
+
+    .signature-image {
+        margin: 0px;
+    }
+
+    .defaultsignature-image img,
+    .signature-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .featured-product .featured-content h6,
+    .featured-product .featured-content span {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .featured-product .featured-content {
+        gap: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ffffff30;
+        cursor: pointer;
+    }
+
+    .featured-product {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .signature {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width:572px) {
+
+    .signature-product span,
+    .featured-product h4,
+    .featured-product .featured-content p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    .signature-product h2 {
+        font-size: 28px;
+        line-height: 30.8px;
+    }
+
+    .signature-product {
+        margin-bottom: 30px;
+    }
+
+    .signature-image {
+        margin: 0px;
+    }
+
+    .defaultsignature-image img,
+    .signature-image img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .featured-product .featured-content h6,
+    .featured-product .featured-content span {
+        font-size: 20px;
+        line-height: 22px;
+    }
+
+    .featured-product .featured-content {
+        gap: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #ffffff30;
+        cursor: pointer;
+    }
+
+    .featured-product {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        position: relative;
+    }
+
+    .signature {
+        padding-top: 80px;
+        padding-bottom: 60px;
+    }
+}

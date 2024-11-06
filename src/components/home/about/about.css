@@ -1,0 +1,305 @@
+.about {
+  background-color: #000000;
+  padding-bottom: 170px;
+  padding-top: 120px;
+}
+
+.about-section-heading h4 {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.about-content .about-data .section-box h2 {
+  font-size: 70px;
+  line-height: 77px;
+  font-weight: 400;
+  color: #FFD057;
+  text-transform: uppercase;
+}
+
+.side-scrollbar .scrollbar .scroll-menu.active {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 100%;
+}
+
+.side-scrollbar .scrollbar .scroll-menu {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  opacity: 65%;
+}
+
+.side-scrollbar .scrollbar {
+  display: flex;
+  flex-direction: column;
+  gap: 190px;
+  margin-top: 60px;
+}
+
+.side-scrollbar {
+  border-left: 3px dotted rgb(255, 255, 255);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  width: 280px;
+}
+
+.scroll-menu>span {
+  position: relative;
+}
+
+/* .scroll-menu>span:before {
+    content: '\2500\2500';
+    margin-right: 5px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+} */
+
+/* .scroll-menu>span:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    height: 100%;
+} */
+
+/* .about-data {
+    display: none; 
+}
+
+.about-data.active {
+    display: block; 
+} */
+
+.scroll-menu {
+  display: flex;
+  gap: 10px;
+}
+
+.about-data {
+  display: none;
+  opacity: 0;
+  transition: opacity 10s ease;
+  pointer-events: none;
+}
+
+.about-data.active {
+  display: block;
+  opacity: 1;
+  pointer-events: auto;
+  transition: opacity 10s ease;
+}
+
+.about-content .about-data .section-box span {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.section-box {
+  background: #000000;
+  padding: 30px;
+  margin-top: -110px;
+  position: relative;
+  margin-left: 448px;
+}
+
+.vertical-slider {
+  height: 800px;
+}
+
+.scroll-menu {
+  cursor: pointer;
+}
+
+.about {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+.show {
+  opacity: 1;
+}
+
+@media only screen and (max-width:572px) {
+  .about {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+
+  .scrollmenu-name {
+    display: none;
+  }
+
+  .certificate-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-box {
+    background: #000000;
+    padding: 30px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .about-content .about-data .section-box h2 {
+    font-size: 28px;
+    line-height: 30.8px;
+  }
+
+  .about-content .about-data .section-box span {
+    font-size: 14px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .side-scrollbar .scrollbar {
+    display: flex;
+    flex-direction: column;
+    gap: 122px;
+    margin-top: 60px;
+  }
+
+  /* .side-scrollbar {
+        height: 100%;
+      } */
+
+  .vertical-slider {
+    height: auto;
+  }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+  .about {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+
+  .scrollmenu-name {
+    display: none;
+  }
+
+  .certificate-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-box {
+    background: #000000;
+    padding: 30px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .about-content .about-data .section-box h2 {
+    font-size: 45px;
+    line-height: 45.8px;
+  }
+
+  .about-content .about-data .section-box span {
+    font-size: 14px;
+    line-height: 22.4px;
+    font-weight: 400;
+    color: #ffffff;
+  }
+
+  .side-scrollbar .scrollbar {
+    display: flex;
+    flex-direction: column;
+    gap: 122px;
+    margin-top: 60px;
+  }
+
+  /* .side-scrollbar {
+        height: 100%;
+      } */
+
+  .vertical-slider {
+    height: auto;
+  }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+  .about {
+    padding-bottom: 70px;
+    padding-top: 60px;
+  }
+
+  .scrollmenu-name {
+    display: none;
+  }
+
+  .certificate-image img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-box {
+    background: #000000;
+    padding: 30px;
+    margin-top: 0px;
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .about-content .about-data .section-box h2 {
+    font-size: 48px;
+    line-height: 57.8px;
+  }
+
+  .side-scrollbar .scrollbar {
+    display: flex;
+    flex-direction: column;
+    gap: 122px;
+    margin-top: 60px;
+  }
+
+  /* .side-scrollbar {
+      height: 100%;
+    } */
+
+  .vertical-slider {
+    height: auto;
+  }
+}
+
+
+@media (min-width:993px) and (max-width:1200px) {
+  .section-box {
+    padding: 20px;
+    margin-top: -90px;
+    margin-left: 357px;
+  }
+
+  .about-content .about-data .section-box h2 {
+    font-size: 52px;
+    line-height: 57px;
+  }
+
+  .about {
+    background-color: #000000;
+    padding-bottom: 130px;
+    padding-top: 100px;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1700px) { 
+  .about {
+    background-color: #000000;
+    padding-bottom: 140px;
+    padding-top: 100px;
+  }
+}

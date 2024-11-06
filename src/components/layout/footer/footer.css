@@ -1,0 +1,526 @@
+.footer-main {
+    background-color: #000000;
+}
+
+.footer .footer-topsection h2 {
+    font-size: 70px;
+    line-height: 77px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 30px;
+    max-width: 60%;
+}
+
+.footer .footer-topsection span {
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.email-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.email-section .email-input input {
+    border-bottom: 1px solid #ffffff29;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 100%;
+    padding: 28px 0px;
+    font-size: 29px;
+    font-weight: 400;
+    line-height: 43.5px;
+    color: #ffffff !important;
+}
+
+input:focus-visible {
+    outline-offset: 0px;
+    outline: none;
+}
+
+/* .subscribe button {
+    background-image: url("../../../../public/images/Vector.png");
+    background-repeat: no-repeat;
+    height: 165px;
+    width: 156px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-transform: uppercase;
+} */
+
+.subscribe button {
+    height: 165px;
+    width: 156px;
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    border: 0.4px solid #fff;
+    border-radius: 100px;
+}
+
+.footer-description {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    opacity: 60%;
+}
+
+.footer-details span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    opacity: 60%;
+}
+
+.footer-details .icon {
+    border: 1px solid #ffffff;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 100%;
+}
+
+.contact,
+.email {
+    margin-top: 20px;
+}
+
+.location,
+.contact,
+.email {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.footer-links .links h4,
+.footer-links .information h4 {
+    font-size: 26px;
+    line-height: 33.85px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.footer-links .links a,
+.footer-links .information a,
+.webname span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    opacity: 60%;
+}
+
+.f-link {
+    margin-top: 20px;
+}
+
+.webname {
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+.footerring {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+}
+
+.footer-links {
+    position: relative;
+    z-index: 99999;
+}
+
+.desktopfooter {
+    display: block;
+}
+
+.mobilefooter {
+    display: none;
+}
+
+.footer{
+    position: relative;
+}
+
+.footer-main {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-topsection {
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+.footer-topsection.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.bottom-content,.email-input {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 1s ease-out, transform 3s ease-out;
+}
+
+.bottom-content.show,.email-input.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.footer-links {
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 3s ease-out;
+}
+
+.subscribe{
+    opacity: 0;
+    transform: translateX(100%);
+    transition: opacity 1s ease-out, transform 2s ease-out;
+}
+
+.footer-links.show,.subscribe.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@media only screen and (max-width:572px) {
+    .footer .footer-topsection span {
+        font-size: 14px;
+        line-height: 14px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .footer .footer-topsection h2 {
+        font-size: 28px;
+        line-height: 30.8px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .email-section .email-input input {
+        width: 100%;
+        padding: 18px 0px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    .email-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-description {
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 40px;
+        opacity: 60%;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+    }
+
+    .desktopfooter {
+        display: none;
+    }
+
+    .mobilefooter {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .webname {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .webname span {
+        font-size: 13px;
+        line-height: 19.5px;
+    }
+
+    .footer-links .links h4,
+    .footer-links .information h4 {
+        font-size: 20px;
+        line-height: 26.5px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .footer-links .links a,
+    .footer-links .information a,
+    .webname span {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .footer-details span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-details .icon {
+        height: 30px;
+        width: 30px;
+        padding: 7px;
+    }
+
+    .subscribe button {
+        height: 86.59px;
+        width: 82.59px;
+        background-color: transparent;
+        color: #ffffff;
+        font-size: 8.66px;
+        font-weight: 400;
+        line-height: 13.85px;
+        border: 0.4px solid #fff;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+
+    .footer .footer-topsection h2 {
+        font-size: 45px;
+        line-height: 49.8px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .email-section .email-input input {
+        width: 100%;
+        padding: 18px 0px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    .email-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-description {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 40px;
+        opacity: 60%;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+    }
+
+    .desktopfooter {
+        display: none;
+    }
+
+    .mobilefooter {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .webname {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .webname span {
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+
+    .footer-links .links h4,
+    .footer-links .information h4 {
+        font-size: 20px;
+        line-height: 26.5px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    /* .footer-links .links a, .footer-links .information a, .webname span {
+        font-size: 14px;
+        line-height: 21px;
+      } */
+
+    /* .footer-details span {
+        font-size: 14px;
+        line-height: 20px;
+      } */
+
+    .footer-details .icon {
+        height: 30px;
+        width: 30px;
+        padding: 7px;
+    }
+
+    .subscribe button {
+        height: 95.59px;
+        width: 88.59px;
+        font-size: 11.66px;
+        background-color: transparent;
+        color: #ffffff;
+        font-weight: 400;
+        line-height: 16.85px;
+        border: 0.4px solid #fff;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+
+    .footer .footer-topsection h2 {
+        font-size: 45px;
+        line-height: 49.8px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 15px;
+        max-width: 100%;
+    }
+
+    .email-section .email-input input {
+        width: 100%;
+        padding: 18px 0px;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    .email-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .footer-description {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #ffffff;
+        padding-top: 15px;
+        padding-bottom: 40px;
+        opacity: 60%;
+    }
+
+    .footer-links {
+        justify-content: space-between;
+    }
+
+    .desktopfooter {
+        display: none;
+    }
+
+    .mobilefooter {
+        display: block;
+        margin-top: 40px;
+    }
+
+    .webname {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .webname span {
+        font-size: 15px;
+        line-height: 19.5px;
+    }
+
+    .footer-links .links h4,
+    .footer-links .information h4 {
+        font-size: 20px;
+        line-height: 26.5px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+    }
+
+    .footer-details .icon {
+        height: 30px;
+        width: 30px;
+        padding: 7px;
+    }
+
+    .subscribe button {
+        height: 109.59px;
+        width: 102.59px;
+        font-size: 13.66px;
+        background-color: transparent;
+        color: #ffffff;
+        font-weight: 400;
+        line-height: 16.85px;
+        border: 0.4px solid #fff;
+        border-radius: 100px;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .footer .footer-topsection h2 {
+        font-size: 52px;
+        line-height: 57px;
+        margin-top: 15px;
+        max-width: 60%;
+    }
+
+    .email-section {
+        padding-top: 40px;
+        padding-bottom: 60px;
+    }
+}
+
+
+@media (min-width:1201px) and (max-width:1500px) {
+    .footer .footer-topsection h2 {
+        font-size: 56px;
+        line-height: 60px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+        margin-top: 20px;
+        max-width: 60%;
+    }
+}

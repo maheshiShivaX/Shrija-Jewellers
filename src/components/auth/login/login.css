@@ -1,0 +1,57 @@
+.userlogin .userloginform .form-check span {
+    color: #ffffff;
+}
+
+.userlogin .userloginform .form-check a {
+    text-decoration: none;
+}
+
+.userlogin .userloginform .userformlinks {
+    gap: 5px;
+}
+
+.userlogin .userloginform .userformlinks .acno-text {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.userlogin .userloginform .userformlinks a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #b5904f;
+}
+.login_btn{
+    color: #b5904f !important;
+}
+@media only screen and (max-width:572px) {
+    .userlogin{
+        background-image: url('../../../../public/images/banner.png');
+        height: 630px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:573px) and (max-width:768px) {
+    .userlogin{
+        background-image: url('../../../../public/images/banner.png');
+        height: 640px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:769px) and (max-width:992px) {
+    .userlogin{
+        background-image: url('../../../../public/images/banner.png');
+        height: 610px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:992px) and (max-width:1200px) {
+    .userlogin{
+        background-image: url('../../../../public/images/banner.png');
+        height: 640px;
+        background-size: cover;
+      }
+  }

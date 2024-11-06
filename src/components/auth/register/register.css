@@ -1,0 +1,32 @@
+  
+  @media only screen and (max-width:572px) {
+    .userregister{
+        background-image: url('../../../../public/images/banner.png');
+        height: 800px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:573px) and (max-width:768px) {
+    .userregister{
+        background-image: url('../../../../public/images/banner.png');
+        height: 770px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:769px) and (max-width:992px) {
+    .userregister{
+        background-image: url('../../../../public/images/banner.png');
+        height: 780px;
+        background-size: cover;
+      }
+  }
+
+  @media (min-width:992px) and (max-width:1200px) {
+    .userregister{
+        background-image: url('../../../../public/images/banner.png');
+        height: 820px;
+        background-size: cover;
+      }
+  }

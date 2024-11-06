@@ -1,0 +1,315 @@
+.banner {
+  background-image: url('../../../../public/images/banner.png');
+  height: 1050px;
+  background-size: cover;
+}
+
+.banner-heading {
+  background: #000000;
+  padding: 20px 30px;
+  margin-top: -30px;
+  max-width: 700px;
+}
+
+.banner-content {
+  padding: 100px 0 60px;
+}
+
+.banner-heading h2 {
+  font-size: 70px;
+  line-height: 77px;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.banner-description {
+  display: flex;
+  justify-content: end;
+  padding-top: 140px;
+}
+
+.banner-description p {
+  font-size: 16px;
+  line-height: 25.6px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.bannerbtn {
+  padding-top: 50px;
+}
+
+.bannerbtn button {
+  /* background-image: url("../../../../public/images/Vector.png"); */
+  /* background-repeat: no-repeat; */
+  height: 165px;
+  width: 156px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  border: 1px solid #fff;
+  border-radius: 100px;
+}
+
+.bannerbtn a {
+color: #ffffff;
+}
+
+.desktop-header {
+  display: block;
+}
+
+.mobile-header {
+  display: none;
+}
+
+/* animation css */
+.banner {
+  opacity: 0;
+  transition: opacity 3s ease-in-out, transform 1.8s ease-in-out;
+}
+
+.fadeInBanner {
+  opacity: 1;
+}
+
+.desktop-header .container-header {
+  background-color: transparent;
+}
+
+@media only screen and (max-width:572px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .banner-heading h2 {
+    font-size: 28px;
+    line-height: 30.8px;
+  }
+
+  .longest-text {
+    height: 51px;
+  }
+
+  .banner-description p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .banner {
+    height: 674px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-heading {
+    padding: 10px;
+    margin-top: -15px;
+  }
+
+  .banner-content {
+    padding: 70px 0 40px;
+  }
+
+  .bannerbtn {
+    padding-top: 36px;
+  }
+
+  .banner-heading {
+    max-width: 270px;
+  }
+
+  .banner-description p {
+    max-width: 300px;
+  }
+
+  .bannerbtn button {
+    /* background-image: url("../../../../public/images/Vector.png"); */
+    /* background-repeat: no-repeat; */
+    height: 86.59px;
+    width: 82.59px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 8.66px;
+    font-weight: 400;
+    line-height: 13.85px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+  }
+
+  .bannerbtn button .arrow-down svg{
+    height: 13px;
+    width: 13px;
+  }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .banner-heading h2 {
+    font-size: 36px;
+    line-height: 40.8px;
+  }
+
+  .longest-text {
+    height: 62px;
+  }
+
+  .banner-description p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .banner {
+    height: 720px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-heading {
+    padding: 10px;
+    margin-top: -15px;
+  }
+
+  .banner-content {
+    padding: 70px 0 40px;
+  }
+
+  .bannerbtn {
+    padding-top: 36px;
+  }
+
+  .banner-heading {
+    max-width: 370px;
+    margin-left: 45px;
+    max-width: 690px;
+  }
+
+
+  .banner-description p {
+    max-width: 300px;
+  }
+
+  .bannerbtn button {
+    /* background-image: url("../../../../public/images/Vector.png"); */
+    /* background-repeat: no-repeat; */
+    height: 95.59px;
+    width: 88.59px;
+    font-size: 9.66px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 13.85px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+  }
+
+  .bannerbtn button .arrow-down svg{
+    height: 13px;
+    width: 13px;
+  }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+  .banner-heading h2 {
+    font-size: 48px;
+    line-height: 57.8px;
+  }
+
+  .longest-text {
+    height: 78px;
+  }
+
+  .banner-description p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .banner {
+    height: 842px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-heading {
+    padding: 10px;
+    margin-top: -15px;
+  }
+
+  .banner-content {
+    padding: 70px 0 40px;
+  }
+
+  .bannerbtn {
+    padding-top: 36px;
+  }
+
+  .banner-heading {
+    max-width: 480px;
+    margin-left: 45px;
+  }
+
+  .banner-description p {
+    max-width: 337px;
+  }
+
+  .bannerbtn button {
+    /* background-image: url("../../../../public/images/Vector.png"); */
+    /* background-repeat: no-repeat; */
+    height: 109.59px;
+    width: 102.59px;
+    font-size: 10.66px;
+    background-color: transparent;
+    color: #ffffff;
+    font-weight: 400;
+    line-height: 13.85px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+  }
+
+  .bannerbtn button .arrow-down svg{
+    height: 13px;
+    width: 13px;
+  }
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+  .banner-heading h2 {
+    font-size: 48px;
+    line-height: 57.8px;
+  }
+
+  .longest-text {
+    height: 78px;
+  }
+
+  .banner-heading {
+    margin-top: -20px;
+    max-width: 491px;
+  }
+
+  .banner-description {
+    padding-top: 120px;
+  }
+}
+
+@media (min-width:1201px) and (max-width:1700px) {
+  .banner-heading h2 {
+    font-size: 56px;
+    line-height: 60px;
+  }
+}

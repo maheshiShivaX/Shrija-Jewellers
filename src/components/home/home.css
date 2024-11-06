@@ -1,0 +1,152 @@
+.shop-product {
+    background-color: #000000;
+    padding-bottom: 120px;
+}
+
+.shop-boxs {
+    gap: 40px;
+}
+
+.home-main {
+    background-color: #000000;
+}
+
+.shop-boxs .offer-btn span {
+    font-size: 16px;
+    line-height: 25.6px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.box {
+    position: relative;
+    /* height: 420px;
+    width: 420px; */
+    /* background-size: cover;
+    background-position: center; */
+    overflow: hidden;
+    transition: opacity 0.5s ease;
+}
+
+.box:hover {
+    opacity: 0.7;
+}
+
+.box-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: transform 0.8s ease;
+    transform: translateY(100%);
+}
+
+.box:hover .box-content {
+    transform: translateY(0);
+}
+
+.offer-btn {
+    background-color: #000000;
+    padding: 16px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+.box:hover .offer-btn {
+    opacity: 1;
+}
+
+.box-image img {
+    height: 100%;
+    width: 100%;
+}
+
+.shop-product {
+    opacity: 0;
+    transition: opacity 3s ease-in-out;
+}
+
+.fadeInScreen {
+    opacity: 1;
+}
+
+
+@media only screen and (max-width:572px) {
+    .box-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .shop-boxs .box {
+        margin-bottom: 15px;
+    }
+
+    .shop-product {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width:573px) and (max-width:768px) {
+    .box-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .shop-boxs .box {
+        margin-bottom: 30px;
+    }
+
+    .shop-product {
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .box-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .shop-boxs .box {
+        margin-bottom: 30px;
+    }
+
+    .shop-product {
+        padding-bottom: 40px;
+    }
+
+    .shop-boxs {
+        gap: 12px;
+    }
+}
+
+@media (min-width:993px) and (max-width:1200px) {
+    .box-image img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .shop-boxs .box {
+        margin-bottom: 30px;
+    }
+
+    .shop-product {
+        padding-bottom: 40px;
+    }
+
+    .shop-boxs {
+        gap: 12px;
+    }
+}
+
+@media (min-width:1201px) and (max-width:1700px) {
+    .box-image img {
+        height: 100%;
+        width: 100%;
+    }
+}
