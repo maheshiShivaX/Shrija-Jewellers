@@ -62,5 +62,7 @@ export const DAPI_URL = {
     GetShipTracking: 'ShipmentOrder/GetShipTracking',
 
     GetProjectPaymentGatewayByProjectId: 'ProjectPaymentGateway/GetProjectPaymentGatewayByProjectId',
-    GetProjectPaymentGatewayByProjectNo: 'ProjectPaymentGateway/GetProjectPaymentGatewayByProjectNo'
+    GetProjectPaymentGatewayByProjectNo: 'ProjectPaymentGateway/GetProjectPaymentGatewayByProjectNo',
+
+    GetProductSpecificationAll:'ProductSpecification/GetProductSpecificationAll'
 }

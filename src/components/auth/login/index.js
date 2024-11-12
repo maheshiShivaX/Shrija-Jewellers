@@ -48,23 +48,31 @@ const Login = () => {
             });
 
             if (response.status == 200) {
-                if (response.data.isSuccess == 200 && response.data.data.length > 0) {
-                    toast.success("Login Successfully");
+                if (response.data.isSuccess === 200) {
+                    const encryptedData = response.data?.data;
+                    if (!encryptedData || typeof encryptedData !== 'string' || encryptedData.trim() === '') {
+                        throw new Error("Invalid or empty encrypted data format");
+                    }
+
+                    const result = decryptString(encryptedData, secretKey, iv);
+
+                    const parsedData = JSON.parse(result);
                     localStorage.setItem('user', 'true');
-                    localStorage.setItem('SJloginId', loginDetail.loginId);
-                    localStorage.setItem('SJjwtToken', jwtToken);
-                    // navigate('/')
-                    setEmail("");
-                    setPassword("");
+                    localStorage.setItem('SJloginId', parsedData[0].loginId);
+                    localStorage.setItem('SJjwtToken', response.data.token);
+                    toast.success("Login Successfully");
+                    navigate('/');
                 } else {
-                    alert('You are not register');
-                    navigate('/register')
+                    alert('You are not registered');
+                    navigate('/register');
                 }
             }
         } catch (error) {
             toast.error("Please try again later.");
         } finally {
             setLoading(false);
+            setEmail("");
+            setPassword("");
         }
     };
 
@@ -204,7 +212,7 @@ const Login = () => {
                     <Header />
                 </div>
                 <section className="py-5">
-                    <div className="container userform-main h-100">
+                    <div className="container-screen userform-main h-100">
                         <div className="d-md-flex justify-content-between">
                             <div className="form-content col-md-6">
                                 <h1 className="mb-4">WELCOME BUDDY</h1>
@@ -329,6 +337,7 @@ const Login = () => {
                                         onClick={sendOtp}
                                         disabled={loading}
                                         className="resend_otp"
+                                        style={{ color: '#7471fd', cursor: 'pointer' }}
                                     >Resend</p> : null}
                                     <div className="userformlinks d-flex justify-content-center align-items-center">
                                         <span className="acno-text text-white">Don't have account?</span>

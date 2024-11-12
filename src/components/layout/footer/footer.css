@@ -172,6 +172,10 @@ input:focus-visible {
     overflow: hidden;
 }
 
+.logo img{
+    height: 120px;
+}
+
 .footer-topsection {
     opacity: 0;
     transform: translateY(-100%);

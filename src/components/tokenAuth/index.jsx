@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 
 const useAuth = () => {
     const navigate = useNavigate();
-    const jwtToken = localStorage.getItem('jwtToken');
+    const SJjwtToken = localStorage.getItem('SJjwtToken');
 
     const isTokenExpired = (token) => {
         if (!token) return true;
@@ -13,12 +13,12 @@ const useAuth = () => {
     };
 
     useEffect(() => {
-        if (isTokenExpired(jwtToken)) {
+        if (isTokenExpired(SJjwtToken)) {
             localStorage.removeItem('loginId');
             localStorage.removeItem('user');
             // navigate('/login');
         }
-    }, [jwtToken, navigate]);
+    }, [SJjwtToken, navigate]);
 };
 
 export default useAuth;

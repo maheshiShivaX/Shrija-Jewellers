@@ -73,7 +73,7 @@ const Category = () => {
 
     const handleCategoryChange = (item) => {
         localStorage.setItem('SJproductCategoryId', item?.productCategoryId);
-        navigate(`/productsubcategory/${item?.productCategoryId}`);
+        navigate(`/category/${item?.productCategoryId}/productsubcategory`);
     };
 
     return (
@@ -116,14 +116,14 @@ const Category = () => {
                                     300: { slidesPerView: 1, },
                                     480: { slidesPerView: 2, },
                                     640: { slidesPerView: 2, },
-                                    992: { slidesPerView: 2, },
-                                    1200: { slidesPerView: 3, },
+                                    992: { slidesPerView: 3, },
+                                    1200: { slidesPerView: 4, },
                                 }}
                             >
                                 {categoryData?.map((item, i) => (
                                     <SwiperSlide key={i}>
                                         <div className='category-box' onClick={() => handleCategoryChange(item)}>
-                                            <Link >
+                                            <span >
                                                 <div className="products">
                                                     <div className="product-image mb-lg-3 mb-2">
                                                         {/* <img src="./images/necklaces.png" alt="product" className="product-img" /> */}
@@ -141,7 +141,7 @@ const Category = () => {
                                                         <h6>{item?.displayName}</h6>
                                                     </div>
                                                 </div>
-                                            </Link>
+                                            </span>
                                         </div>
                                     </SwiperSlide>
                                 ))}

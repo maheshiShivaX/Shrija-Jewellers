@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import './productsubcategory.css';
 import Layout from "../layout";
-import { imageurl,baseurl } from '../../_config';
-import { Link, useNavigate,useParams } from 'react-router-dom';
+import { imageurl, baseurl } from '../../_config';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 
 const ProductSubCategory = () => {
     const productCategoryId = localStorage.getItem('SJproductCategoryId');
@@ -24,7 +24,7 @@ const ProductSubCategory = () => {
             }
             const response = await axios.get(url);
             if (response.status === 200) {
-                if(response.data.isSuccess == 200){
+                if (response.data.isSuccess == 200) {
                     setSubCategoryData(response.data.data);
                 }
             } else {
@@ -43,15 +43,18 @@ const ProductSubCategory = () => {
     }, [id]);
 
     const subCategoryChange = (item) => {
-        localStorage.setItem('SJproductSubCategoryId', item?.productSubCategoryId);
-        navigate(`/products/${item?.productSubCategoryId}`);
-    };
+        const productCategoryId = item?.productCategoryId;
 
+        localStorage.setItem('SJproductSubCategoryId', item?.productSubCategoryId);
+
+        navigate(`/category/${productCategoryId}/productsubcategory/${item?.productSubCategoryId}/products`);
+    };
+    
     return (
         <Layout>
             <div>
                 <section className="listing_container_header">
-                    <div className="container-screen">                     
+                    <div className="container-screen">
                         {error ? (
                             <p>Error: {error}</p>
                         ) : subCategoryData !== null ? (
@@ -71,7 +74,7 @@ const ProductSubCategory = () => {
                                                     <div className="content_category">
                                                         <p>{item?.displayName}</p>
                                                     </div>
-                                                </span>                                              
+                                                </span>
                                             </div>
                                         </div>
                                     ))}

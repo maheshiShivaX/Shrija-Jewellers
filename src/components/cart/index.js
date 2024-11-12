@@ -155,7 +155,7 @@ const Cart = () => {
                                             <div className="d-md-flex align-items-center mt-3 count_weepr" style={{ color: "#D0D0D0", fontWeight: "600", gap: "20px" }}>
                                                 {/* <span>Metal TypeYellow Gold</span> */}
                                                 <div className="d-flex cart-plus-minus" >
-                                                    <span onClick={() => handleDecrementQuantity(item)}>
+                                                    <span onClick={() => handleDecrementQuantity(item)} style={{cursor:'pointer'}}>
                                                         <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
                                                             <g transform="matrix(1,0,0,1,0,0)">
                                                                 <g id="Icon">
@@ -183,7 +183,7 @@ const Cart = () => {
                                                         </svg>
                                                     </span>
                                                     <span>{item?.quantity}</span>
-                                                    <span onClick={() => handleIncrementQuantity(item)} disabled={loading} >
+                                                    <span onClick={() => handleIncrementQuantity(item)} disabled={loading} style={{cursor:'pointer'}}>
                                                         <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
                                                             <g transform="matrix(1,0,0,1,0,0)">
                                                                 <g id="Icon">

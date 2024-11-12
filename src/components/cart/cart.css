@@ -18,15 +18,15 @@
 
 .product-cart-detail h5 {
     color: #fff;
-    text-align: end;
+    /* text-align: end; */
 }
 
 .ring_size {
-    text-align: end;
+    /* text-align: end; */
 }
 
 .count_weepr {
-    justify-content: end;
+    /* justify-content: end; */
 }
 
 .cart-plus-minus {
@@ -49,7 +49,7 @@
 }
 
 .cart-buttons .continue {
-    width: 35%;
+    width: 20%;
 }
 
 .cart-buttons .continue a p,
@@ -112,6 +112,7 @@
     height: 45px;
     border-radius: 50px;
     font-weight: 600;
+    background-color: transparent;
 }
 
 .pcard {

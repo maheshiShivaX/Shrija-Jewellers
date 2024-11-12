@@ -76,7 +76,7 @@
 
 .pragaraf_content p {
     font-size: 16px;
-    padding: 1rem 0 1.5rem;
+    padding: 10px 0 10px;
     color: #fff;
     font-weight: 400;
 }
@@ -89,17 +89,18 @@
 .imge_wepper img {
     width: 100%;
     margin-bottom: 10px;
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 .image_wrep_main {
     /* display: flex; */
+    gap: 20px;
 }
 
 .img_book img {
     width: 93%;
     /* margin-left: 12px; */
-    border-radius: 7px;
+    /* border-radius: 7px; */
 }
 
 .img_book img:focus-visible,
@@ -114,7 +115,6 @@
 
 @media (max-width: 560px) {
 
-   
     .delivery_date button{
         width: 100%;
     }

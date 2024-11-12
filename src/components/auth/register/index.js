@@ -81,7 +81,7 @@ const Register = () => {
                     const parsedData = JSON.parse(result);
 
                     const jwtToken = response.data.token;
-                    localStorage.setItem('jwtToken', jwtToken);
+                    localStorage.setItem('SJjwtToken', jwtToken);
                     const { loginId } = parsedData;
                     localStorage.setItem('loginId', loginId);
                     localStorage.setItem('user', 'true');

@@ -31,7 +31,7 @@ h2 {
   background-color: transparent;
 }
 
-.category-box a{
+.category-box a {
   text-decoration: none !important;
 }
 
@@ -45,7 +45,7 @@ h2 {
 
 /* user login and register form */
 .form-control:focus {
-    color: #fff;
+  color: #fff;
 }
 
 
@@ -53,6 +53,10 @@ h2 {
 .userlogin {
   background-image: url('../public/images/banner.png');
   height: 1000px;
+  width: 100%;
+  right: 0;
+  position: relative;
+  background-size: cover;
 }
 
 .userregister .form-outline input:focus,
@@ -77,6 +81,7 @@ h2 {
   font-weight: 400;
   color: #ffffff90;
 }
+
 .form-group select {
   background: transparent;
   color: #ffffff70;
@@ -148,6 +153,16 @@ h2 {
   text-decoration: none;
   font-size: 18px;
   font-weight: 600;
+}
+
+.breadcrumb_data a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.breadcrumb_data a:hover {
+  color: #caa746;
+  text-decoration: none;
 }
 
 @media only screen and (max-width:572px) {
@@ -313,17 +328,18 @@ h2 {
     padding-right: 100px;
   }
 
-    /* user login and register form */
-    .userform-main {
-      padding-top: 20px;
-    }
+  /* user login and register form */
+  .userform-main {
+    padding-top: 20px;
+  }
 
   .form-content h1 {
     font-size: 50px;
     line-height: 42px;
   }
 
-  .userregister .form-control, .userlogin .form-control {
+  .userregister .form-control,
+  .userlogin .form-control {
     background: #000000a6;
   }
 }

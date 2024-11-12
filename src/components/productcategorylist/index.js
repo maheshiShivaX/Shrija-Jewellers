@@ -5,34 +5,6 @@ import './productcategorylist.css';
 import axios from 'axios';
 import { imageurl, baseurl } from '../../_config';
 
-const categoryList = [
-    {
-        name: 'NECKLACES',
-        image: './images/category.jpg',
-        link: ''
-    },
-    {
-        name: 'NECKLACES',
-        image: './images/category.jpg',
-        link: ''
-    },
-    {
-        name: 'NECKLACES',
-        image: './images/category.jpg',
-        link: ''
-    },
-    {
-        name: 'NECKLACES',
-        image: './images/category.jpg',
-        link: ''
-    },
-    {
-        name: 'NECKLACES',
-        image: './images/category.jpg',
-        link: ''
-    }
-]
-
 const ProductCategoryList = () => {
     const navigate = useNavigate();
     const [categoryData, setCategoryData] = useState(null);

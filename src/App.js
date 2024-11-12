@@ -31,11 +31,11 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="forgotpassword" element={<ForgotPassword />} />
           <Route path="register" element={<Register />} />
-          <Route path="productsubcategory/:id" element={<ProductSubCategory />} />
+          <Route path="category/:id/productsubcategory" element={<ProductSubCategory />} />
           <Route path="productcategorylist" element={<ProductCategoryList />} />
           <Route path="productslist" element={<ProductList />} />
-          <Route path="products/:id" element={<Products />} />
-          <Route path="productdetail/:id" element={<ProductDetail />} />
+          <Route path="/category/:categoryId/productsubcategory/:subcategoryId/products" element={<Products />} />
+          <Route path="/category/:categoryId/productsubcategory/:subcategoryId/products/:productsId/productdetail" element={<ProductDetail />} />
           <Route path="cart" element={<Cart />} />
           <Route path="shippingaddress" element={<ShippingAddress />} />
           <Route path="checkout" element={< Checkout/>} />
