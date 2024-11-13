@@ -27,11 +27,8 @@
     text-decoration: none;
 }
 
-
-
 .product_content_wepper {
     color: #fff;
-    margin-top: 15px;
 }
 
 .hedding_product .icon_wepper h6 {
@@ -73,23 +70,6 @@
     background-color: #ffffff;
     border-radius: 0px !important;
 }
-
-.img_hover_wrapper {
-    overflow: hidden;
-}
-
-.img_hover_wrapper img {
-    transition: transform .5s ease;
-  }
-
- .img_hover_wrapper img:hover {
-    transform: scale(1.3);
-  }
-
-  .img_hover_wrapper {
-    display: inline-block;
-    box-sizing: border-box;
-  }
 
 .product_content_wepper h2 {
     font-size: 18px;

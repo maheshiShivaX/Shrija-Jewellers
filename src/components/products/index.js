@@ -154,9 +154,9 @@ const Products = () => {
     return (
         <Layout>
             <section className="product_wepper_main">
-                <div className="container-screen">
-                    <div className="py-3">
-                        <div className="breadcrumb_data my-2">
+                <div className="container-screen pt-4 pb-5">
+                    <div className="">
+                        <div className="breadcrumb_data pb-5">
                             {breadcrumbItems.map((item, index) => (
                                 <span key={index}>
                                     <Link to={item.path}>{item.label}</Link>
@@ -370,7 +370,7 @@ const Products = () => {
                                                 const discountPercent = calculateDiscountPercent(item.mrp, item.unitPrice);
                                                 return (
                                                     <React.Fragment key={i}>
-                                                        <div className="col-lg-3 col-md-3 col-sm-6 col-12 col-6 mb-5">
+                                                        <div className="col-lg-3 col-md-3 col-sm-6 col-12 col-6 mb-4 pb-4">
                                                             <span onClick={() => onProductDetail(item)} className="product_img_wepper" style={{ cursor: 'pointer' }}>
                                                                 {item?.productImageDtos.length > 0 ? (
                                                                     item.productImageDtos.map((image, j) => (
@@ -392,11 +392,10 @@ const Products = () => {
                                                                 )}
 
                                                                 <div className="product_content_wepper">
-                                                                    <h2 title={item?.productName} style={{ cursor: 'pointer' }}>
+                                                                    <h2 className="mb-0 py-2" title={item?.productName} style={{ cursor: 'pointer' }}>
                                                                         {truncateProductName(item?.productName)}
                                                                     </h2>
                                                                 </div>
-
                                                             </span>
                                                             <div className="product_content_wepper mt-0">
                                                                 <div className="py-2 d-flex justify-content-between align-items-center" style={{ paddingRight: '5px' }}>

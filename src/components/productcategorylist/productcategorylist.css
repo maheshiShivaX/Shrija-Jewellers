@@ -1,12 +1,6 @@
 .productcategorylist {
     background-color: #000;
 }
-
 .categorylist .categorylist_img img {
     width: 100%;
-}
-
-.categorylist .categorylist_img h4{
-    color: #ffffff;
-    padding-top: 10px;
 }

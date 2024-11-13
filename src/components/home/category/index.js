@@ -136,8 +136,8 @@ const Category = () => {
                                                         )}
                                                     </div>
                                                     <div className="product-detail">
-                                                        <span className="">{`{ 0${i + 1} }`}</span>
-                                                        <p className="py-lg-3 py-2 mb-0">{1600}</p>
+                                                        {/* <span className="">{`{ 0${i + 1} }`}</span>
+                                                        <p className="py-lg-3 py-2 mb-0">{1600}</p> */}
                                                         <h6>{item?.displayName}</h6>
                                                     </div>
                                                 </div>

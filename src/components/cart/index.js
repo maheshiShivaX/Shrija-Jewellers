@@ -119,6 +119,13 @@ const Cart = () => {
         }
     }
 
+    const onProductDetail = (item) => {
+        localStorage.setItem('SJproductId', item?.productId);
+        localStorage.setItem('SJproductCategoryId', item?.productCategoryId);
+        localStorage.setItem('SJproductSubCategoryId', item?.productSubCategoryId);
+        // navigate(`/category/${item?.productCategoryId}/productsubcategory/${item?.productSubCategoryId}/products/${item?.productId}/productdetail`);
+    }
+
     return (
         <Layout>
             <div className="container-screen cart-main py-md-5 py-4 ">
@@ -129,13 +136,15 @@ const Cart = () => {
                     <div className="cart-content col-xl-7 col-md-6 col-12 pb-4">
                         {filteredData && filteredData.length > 0 ? (
                             filteredData?.map((item, i) => (
-                                <div className="cart-detail row">
-                                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                                <div className="cart-detail row mb-sm-auto mb-3">
+                                    <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12">
                                         <div className="p-image ">
                                             {item?.productImageDtos && item?.productImageDtos.length > 0 ?
                                                 item?.productImageDtos.map((image, j) => (
                                                     image.isHeader ?
                                                         <img
+                                                            onClick={() => onProductDetail(item)}
+                                                            style={{ cursor: 'pointer' }}
                                                             key={image.productImageId}
                                                             src={`${imageurl}${image.imgPath}`}
                                                             alt={`Product Image ${j + 1}`}
@@ -145,69 +154,71 @@ const Cart = () => {
                                             }
                                         </div>
                                     </div>
-                                    <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-6">
+                                    <div className="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-6 col-12">
                                         <div className="product-cart-detail ">
-                                            <h5 className="mb-md-auto mb-1">{item?.displayName}</h5>
+                                            <h5 className="mb-md-auto mb-1" onClick={() => onProductDetail(item)} style={{ cursor: 'pointer' }}>{item?.displayName}</h5>
                                             <div className="mt-1 ring_size" style={{ color: "#D0D0D0" }}>
                                                 <span>Ring Size : </span>
                                                 <span>9</span>
                                             </div>
                                             <div className="d-md-flex align-items-center mt-3 count_weepr" style={{ color: "#D0D0D0", fontWeight: "600", gap: "20px" }}>
                                                 {/* <span>Metal TypeYellow Gold</span> */}
-                                                <div className="d-flex cart-plus-minus" >
-                                                    <span onClick={() => handleDecrementQuantity(item)} style={{cursor:'pointer'}}>
-                                                        <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
-                                                            <g transform="matrix(1,0,0,1,0,0)">
-                                                                <g id="Icon">
-                                                                    <g id="_40" data-name="40">
-                                                                        <rect
-                                                                            id="Background"
-                                                                            fill="#2492ff00"
-                                                                            height="512"
-                                                                            rx="150"
-                                                                            width="512"
-                                                                            stroke="none"
-                                                                        />
-                                                                        <rect
-                                                                            fill="#ffffffff"
-                                                                            height="50"
-                                                                            rx="25"
-                                                                            width="290"
-                                                                            x="111"
-                                                                            y="231"
-                                                                            stroke="none"
-                                                                        />
+                                                <div className="d-flex justify-content-between align-items-center" style={{gap:'20px'}}>
+                                                    <div className="d-flex cart-plus-minus" >
+                                                        <span onClick={() => handleDecrementQuantity(item)} style={{ cursor: 'pointer' }}>
+                                                            <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
+                                                                <g transform="matrix(1,0,0,1,0,0)">
+                                                                    <g id="Icon">
+                                                                        <g id="_40" data-name="40">
+                                                                            <rect
+                                                                                id="Background"
+                                                                                fill="#2492ff00"
+                                                                                height="512"
+                                                                                rx="150"
+                                                                                width="512"
+                                                                                stroke="none"
+                                                                            />
+                                                                            <rect
+                                                                                fill="#ffffffff"
+                                                                                height="50"
+                                                                                rx="25"
+                                                                                width="290"
+                                                                                x="111"
+                                                                                y="231"
+                                                                                stroke="none"
+                                                                            />
+                                                                        </g>
                                                                     </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
-                                                    <span>{item?.quantity}</span>
-                                                    <span onClick={() => handleIncrementQuantity(item)} disabled={loading} style={{cursor:'pointer'}}>
-                                                        <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
-                                                            <g transform="matrix(1,0,0,1,0,0)">
-                                                                <g id="Icon">
-                                                                    <g id="_39" data-name="39">
-                                                                        <rect
-                                                                            id="Background"
-                                                                            fill="#2492ff00"
-                                                                            height="512"
-                                                                            rx="150"
-                                                                            width="512"
-                                                                            stroke="none"
-                                                                        />
-                                                                        <path
-                                                                            d="M376 231H281v-95c0-13.81-11.19-25-25-25-13.81 0-25 11.19-25 25v95H136c-13.81 0-25 11.19-25 25 0 13.81 11.19 25 25 25h95v95c0 13.81 11.19 25 25 25 13.81 0 25-11.19 25-25v-95h95c13.81 0 25-11.19 25-25 0-13.81-11.19-25-25-25z"
-                                                                            fill="#ffffffff"
-                                                                            stroke="none"
-                                                                        />
+                                                            </svg>
+                                                        </span>
+                                                        <span>{item?.quantity}</span>
+                                                        <span onClick={() => handleIncrementQuantity(item)} disabled={loading} style={{ cursor: 'pointer' }}>
+                                                            <svg id="Layer_2" height="25" viewBox="0 0 512 512" width="25" xmlns="http://www.w3.org/2000/svg" data-name="Layer 2">
+                                                                <g transform="matrix(1,0,0,1,0,0)">
+                                                                    <g id="Icon">
+                                                                        <g id="_39" data-name="39">
+                                                                            <rect
+                                                                                id="Background"
+                                                                                fill="#2492ff00"
+                                                                                height="512"
+                                                                                rx="150"
+                                                                                width="512"
+                                                                                stroke="none"
+                                                                            />
+                                                                            <path
+                                                                                d="M376 231H281v-95c0-13.81-11.19-25-25-25-13.81 0-25 11.19-25 25v95H136c-13.81 0-25 11.19-25 25 0 13.81 11.19 25 25 25h95v95c0 13.81 11.19 25 25 25 13.81 0 25-11.19 25-25v-95h95c13.81 0 25-11.19 25-25 0-13.81-11.19-25-25-25z"
+                                                                                fill="#ffffffff"
+                                                                                stroke="none"
+                                                                            />
+                                                                        </g>
                                                                     </g>
                                                                 </g>
-                                                            </g>
-                                                        </svg>
-                                                    </span>
+                                                            </svg>
+                                                        </span>
+                                                    </div>
+                                                    <span style={{ fontSize: "20px" }}>₹{item?.unitPrice}</span>
                                                 </div>
-                                                <span style={{ fontSize: "20px" }}>₹{item?.unitPrice}</span>
                                                 <div className="cart-buttons remove_btn">
                                                     <div className="clear" onClick={() => handleDeleteItem(item)} disabled={loading}>
                                                         <button>Remove Item</button>

@@ -1,3 +1,355 @@
-.productlist_img h4{
+.product_wepper_main {
+    width: 100%;
+    background-color: #000000;
+}
+
+.hedding_product h2 {
+    font-size: 55px;
+    margin: 0;
+    color: #fff;
+}
+
+.product_wepper_main .icon_wepper a {
+    color: #fff;
+    margin-left: 16px;
+    font-size: 21px;
+    background: gray;
+    padding: 5px 12px;
+}
+
+.breadcrumb_data a {
     color: #ffffff;
+    text-decoration: none;
+}
+
+.breadcrumb_data a:hover {
+    color: #caa746;
+    text-decoration: none;
+}
+
+.product_content_wepper {
+    color: #fff;
+}
+
+.hedding_product .icon_wepper h6 {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-select-single .ant-select-selector {
+    border-radius: 0px !important;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-select-single.ant-select-open .ant-select-selection-item {
+    color: rgb(0 0 0 / 73%) !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-select-single.ant-select-show-arrow .ant-select-selection-item {
+    padding-inline-end: 18px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+:where(.css-dev-only-do-not-override-apn68).ant-select-dropdown {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 4px;
+    color: rgba(0, 0, 0, 0.88);
+    font-size: 14px;
+    line-height: 1.5714285714285714;
+    list-style: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    position: absolute;
+    top: -9999px;
+    z-index: 1050;
+    overflow: hidden;
+    font-variant: initial;
+    background-color: #ffffff;
+    border-radius: 0px !important;
+}
+
+.product_content_wepper h2 {
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+    text-align: start;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product_content_wepper h2 {
+    transition: color 0.6s ease;
+}
+
+.product_content_wepper h2:hover {
+    color: #caa746;
+}
+
+.product_content_wepper .star i {
+    color: #caa746;
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.product_content_wepper .star span {
+    color: gray;
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.product_content_wepper .price {
+    display: flex;
+    align-items: center;
+}
+
+.product_content_wepper .price .unit_price {
+    margin: 0;
+    padding-right: 10px;
+    font-weight: bold;
+    font-size: 17px;
+    color: #caa746;
+}
+
+.product_content_wepper .price .discount_percent {
+    padding-left: 8px;
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+    font-family: math;
+}
+
+.product_content_wepper .price del {
+    font-weight: bold;
+    font-size: 17px;
+    color: gray;
+}
+
+.product_content_wepper .bttn_wepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.product_content_wepper .bttn_wepper a {
+    text-decoration: none;
+    color: #fff;
+    border: solid 1px gray;
+    padding: 8px 25px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: all 1S ease;
+    font-weight: 500;
+}
+
+.product_content_wepper .bttn_wepper a:hover {
+    background-color: #caa746;
+    border: solid 1px #caa746;
+    color: #000;
+    transition: all 1S ease;
+    font-weight: 500;
+}
+
+.product_content_wepper .bttn_wepper a.active {
+    background-color: #caa746;
+    color: #000;
+    border: solid 1px #caa746;
+    transition: all 1S ease;
+}
+
+.product_content_wepper .bttn_wepper a.active:hover {
+    background-color: transparent;
+    border: solid 1px gray;
+    color: #fff;
+    transition: all 1S ease;
+}
+
+.bttn_wepper .add_to_cart_btn {
+    position: relative;
+    overflow: hidden;
+    color: #fff;
+    padding: 5px 10px;
+    background-color: #caa746;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.bttn_wepper .add_to_cart_btn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+
+.bttn_wepper .add_to_cart_btn:hover {
+    color: #caa746;
+}
+
+.bttn_wepper .add_to_cart_btn:hover::after {
+    left: 0;
+}
+
+.bttn_wepper .buy_now_btn_product {
+    position: relative;
+    overflow: hidden;
+    color: #caa746;
+    padding: 5px 10px;
+    background-color: #fff;
+    transition: color 0.3s ease;
+    z-index: 1;
+}
+
+.bttn_wepper .buy_now_btn_product::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #caa746;
+    transition: left 0.5s ease;
+    z-index: -1;
+}
+
+.bttn_wepper .buy_now_btn_product:hover {
+    color: #ffffff;
+}
+
+.bttn_wepper .buy_now_btn_product:hover::after {
+    left: 0;
+}
+
+/* filter sidebar */
+.filter_sidebar .sidebar-tags .widget-title,
+.sidebar-filter .refined-widgets .widget-title {
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.filter_sidebar .sidebar-title {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-between;
+    -moz-box-pack: space-between;
+    -ms-flex-pack: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.filter_sidebar .sidebar-tags .widget-content .list-tags .item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 10px;
+}
+
+.filter_sidebar .sidebar-tags .widget-content .list-tags .item input {
+    height: 18px;
+    width: 18px;
+    border: 1px solid #fff;
+    border-radius: 0px;
+}
+
+.filter_sidebar .sidebar-tags .widget-content .list-tags .item label {
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+
+@media (min-width:1300px) and (max-width:1500px) {
+    .product_content_wepper .bttn_wepper a {
+        text-decoration: none;
+        color: #fff;
+        border: solid 1px gray;
+        padding: 10px 20px;
+        font-size: 16px;
+        border-radius: 5px;
+        transition: all 1S ease;
+        font-weight: 500;
+    }
+
+    .product_content_wepper h2 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 5px;
+    }
+}
+
+@media (min-width:992px) and (max-width:1300px) {
+    .product_content_wepper .bttn_wepper a {
+        text-decoration: none;
+        color: #fff;
+        border: solid 1px gray;
+        padding: 5px 10px;
+        font-size: 14px;
+        border-radius: 5px;
+        transition: all 1S ease;
+        font-weight: 500;
+    }
+
+    .product_content_wepper h2 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 5px;
+    }
+}
+
+@media (min-width:769px) and (max-width:992px) {
+    .product_content_wepper .bttn_wepper a {
+        text-decoration: none;
+        color: #fff;
+        border: solid 1px gray;
+        padding: 4px 6px;
+        font-size: 12px;
+        border-radius: 5px;
+        transition: all 1S ease;
+        font-weight: 500;
+    }
+
+    .product_content_wepper h2 {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 5px;
+    }
+}
+
+@media(max-width:560px) {
+    .bttn_wepper span {
+        padding: 5px 15px;
+    }
+
+    .product_wepper_main .hedding_product {
+        padding-top: 0px;
+    }
+
+    .product_wepper_main .icon_wepper a {
+        padding: 5px 9px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+
+    .hedding_product h2 {
+        font-size: 24px;
+    }
+
+    .product_content_wepper h2 {
+        font-size: 17px;
+        line-height: 1;
+    }
 }

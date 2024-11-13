@@ -24,10 +24,11 @@
 .login_btn{
     color: #b5904f !important;
 }
+
 @media only screen and (max-width:572px) {
     .userlogin{
         background-image: url('../../../../public/images/banner.png');
-        height: 630px;
+        height: 690px;
         background-size: cover;
       }
   }
@@ -35,7 +36,7 @@
   @media (min-width:573px) and (max-width:768px) {
     .userlogin{
         background-image: url('../../../../public/images/banner.png');
-        height: 640px;
+        height: 690px;
         background-size: cover;
       }
   }
@@ -43,7 +44,7 @@
   @media (min-width:769px) and (max-width:992px) {
     .userlogin{
         background-image: url('../../../../public/images/banner.png');
-        height: 610px;
+        height: 690px;
         background-size: cover;
       }
   }

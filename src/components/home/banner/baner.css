@@ -81,7 +81,78 @@ color: #ffffff;
   background-color: transparent;
 }
 
-@media only screen and (max-width:572px) {
+
+@media only screen and (max-width:310px) {
+  .desktop-header {
+    display: none;
+  }
+
+  .mobile-header {
+    display: block;
+  }
+
+  .banner-heading h2 {
+    font-size: 28px;
+    line-height: 30.8px;
+  }
+
+  .longest-text {
+    height: 51px;
+  }
+
+  .banner-description p {
+    font-size: 14px;
+    line-height: 22.4px;
+  }
+
+  .banner {
+    height: 740px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .banner-heading {
+    padding: 10px;
+    margin-top: -15px;
+  }
+
+  .banner-content {
+    padding: 70px 0 40px;
+  }
+
+  .bannerbtn {
+    padding-top: 36px;
+  }
+
+  .banner-heading {
+    max-width: 270px;
+  }
+
+  .banner-description p {
+    max-width: 300px;
+  }
+
+  .bannerbtn button {
+    /* background-image: url("../../../../public/images/Vector.png"); */
+    /* background-repeat: no-repeat; */
+    height: 86.59px;
+    width: 82.59px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 8.66px;
+    font-weight: 400;
+    line-height: 13.85px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+  }
+
+  .bannerbtn button .arrow-down svg{
+    height: 13px;
+    width: 13px;
+  }
+}
+
+@media (min-width:311px) and (max-width:572px) {
   .desktop-header {
     display: none;
   }

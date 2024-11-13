@@ -56,7 +56,6 @@ const getProductDetailById = async (productId) => {
     }
 };
 
-
 export const addToCart = (formData) => async (dispatch) => {
     const SJloginId = localStorage.getItem('SJloginId');
     const SJjwtToken = localStorage.getItem('SJjwtToken');
@@ -180,7 +179,6 @@ export const deleteItem = (item) => async (dispatch) => {
         dispatch(get_cart_Data());
     }
 };
-
 
 export const incrQuantity = (item) => async (dispatch, getState) => {
     const SJloginId = localStorage.getItem('SJloginId');

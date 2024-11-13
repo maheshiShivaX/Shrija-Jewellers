@@ -322,7 +322,7 @@ const Checkout = () => {
     return (
         <Layout>
             <section class="bg_pic pt-4 pb-5">
-                <div class="container">
+                <div class="container-screen">
                     <h3 className="text-white pb-2">Delivery Address</h3>
                     <div className="row">
                         <div className="col-xl-8 col-md-7 col-12">
